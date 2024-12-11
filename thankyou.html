@@ -84,12 +84,56 @@
 		<link href="css/responsive.css" rel="stylesheet" />
 
 		<!-- Google Tag Manager -->
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','GTM-N533W2H8');</script>
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-N533W2H8");
+		</script>
 		<!-- End Google Tag Manager -->
+
+		<!-- Meta Pixel Code -->
+		<script>
+			!(function (f, b, e, v, n, t, s) {
+				if (f.fbq) return;
+				n = f.fbq = function () {
+					n.callMethod
+						? n.callMethod.apply(n, arguments)
+						: n.queue.push(arguments);
+				};
+				if (!f._fbq) f._fbq = n;
+				n.push = n;
+				n.loaded = !0;
+				n.version = "2.0";
+				n.queue = [];
+				t = b.createElement(e);
+				t.async = !0;
+				t.src = v;
+				s = b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t, s);
+			})(
+				window,
+				document,
+				"script",
+				"https://connect.facebook.net/en_US/fbevents.js"
+			);
+			fbq("init", "464108719680215");
+			fbq("track", "PageView");
+		</script>
+		<noscript
+			><img
+				height="1"
+				width="1"
+				style="display: none"
+				src="https://www.facebook.com/tr?id=464108719680215&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Meta Pixel Code -->
 
 		<style>
 			/* body {
@@ -147,10 +191,15 @@
 	</head>
 
 	<body>
-
 		<!-- Google Tag Manager (noscript) -->
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N533W2H8"
-		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-N533W2H8"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
 		<!-- End Google Tag Manager (noscript) -->
 
 		<!-- PRELOADER SPINNER
@@ -252,8 +301,8 @@
 							/></a>
 						</div> -->
 
-						<!-- MAIN MENU -->
-						<!-- <nav class="wsmenu clearfix">
+				<!-- MAIN MENU -->
+				<!-- <nav class="wsmenu clearfix">
 							<ul class="wsmenu-list">
 								<li class="nl-simple" aria-haspopup="true">
 									<a href="#">Home</a>
@@ -278,17 +327,17 @@
 								</li>
 							</ul>
 						</nav> -->
-						<!-- END MAIN MENU -->
+				<!-- END MAIN MENU -->
 
-						<!-- NAVIGATION MENU BUTTON -->
-						<!-- <div class="header-button">
+				<!-- NAVIGATION MENU BUTTON -->
+				<!-- <div class="header-button">
 							<span class="nl-simple header-btn blue-hover"
 								><a class="blue-hover" href="./images/focus/brochure.pdf" target="_blank"
 										>Download Brochure</a
 									>
 						</div> -->
-					<!-- </div> -->
-				</div>
+				<!-- </div> -->
+
 				<!-- END NAVIGATION MENU -->
 			</header>
 			<!-- END HEADER -->
@@ -422,7 +471,9 @@
 								<h5 class="h5-xs">Emergency Cases</h5>
 
 								<!-- Footer List -->
-								<h5 class="h5-xl blue-color"><a href="tel:+919845901793" >+91 98459 01793</a></h5>
+								<h5 class="h5-xl blue-color">
+									<a href="tel:+919845901793">+91 98459 01793</a>
+								</h5>
 
 								<!-- Text -->
 								<p class="p-sm mt-15">

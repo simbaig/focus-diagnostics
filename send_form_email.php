@@ -14,6 +14,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
     $message = $_POST['message']; // Added this line to retrieve the message field
 
+    $utm_source = $_POST['utm_source'];
+    $utm_medium = $_POST['utm_medium'];
+    $utm_id = $_POST['utm_id'];
+
     // Create a new PHPMailer instance for sending inquiry email
     $mail = new PHPMailer();
 
@@ -22,17 +26,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Host = 'smtp.hostinger.com';
     $mail->SMTPAuth = true;
     $mail->SMTPDebug = 0; // Change this to 0 to suppress debugging output
-    $mail->Username = 'donotreply@diagnosticsfocus.com';
-    $mail->Password = 'Wasim@123';
+    $mail->Username = 'info@diagnosticsfocus.com';
+    $mail->Password = 'Diagnosticsfocus@123';
     $mail->SMTPSecure = 'ssl';
     $mail->Port = 465;
 
     // Set email parameters for inquiry email
-    $mail->setFrom('donotreply@diagnosticsfocus.com', 'Diagnostics Focus');
+    $mail->setFrom('info@diagnosticsfocus.com', 'Diagnostics Focus');
     $mail->addAddress('drkarthikhegde@gmail.com'); // Add recipient
     $mail->Subject = 'New Inquiry Received';
     $mail->isHTML(true);
-    $mail->Body = "<h2>New Inquiry Received</h2><br>Name: $name<br>Email: $email<br>Phone: $phone<br>Message: $message"; // Updated email body to include message field
+    $mail->Body = "<h2>New Inquiry Received</h2><br>Name: $name<br>Email: $email<br>Phone: $phone<br>Message: $message<br>UTM Source: $utm_source<br>UTM Medium: $utm_medium<br>UTM ID: $utm_id"; // Updated email body to include UTM parameters
 
     // Send the inquiry email
     if ($mail->send()) {
@@ -42,12 +46,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $thankYouMail->Host = 'smtp.hostinger.com';
         $thankYouMail->SMTPAuth = true;
         $thankYouMail->SMTPDebug = 0; // Change this to 0 to suppress debugging output
-        $thankYouMail->Username = 'donotreply@diagnosticsfocus.com';
-        $thankYouMail->Password = 'Wasim@123';
+        $thankYouMail->Username = 'info@diagnosticsfocus.com';
+        $thankYouMail->Password = 'Diagnosticsfocus@123';
         $thankYouMail->SMTPSecure = 'ssl';
         $thankYouMail->Port = 465;
 
-        $thankYouMail->setFrom('donotreply@diagnosticsfocus.com', 'Diagnostics Focus');
+        $thankYouMail->setFrom('info@diagnosticsfocus.com', 'Diagnostics Focus');
         $thankYouMail->addAddress($email); // Add recipient (customer's email)
         $thankYouMail->Subject = 'Thank You for Your Interest in Focus Vascular Clinics!';
         $thankYouMail->isHTML(true);
