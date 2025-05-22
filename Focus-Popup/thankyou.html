@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="author" content="Jthemes" />
+		<meta name="description" content="Focus Vascular Clinic" />
+		<meta
+			name="keywords"
+			content="Responsive, HTML5 Template, Jthemes, One Page, Landing, Medical, Health, Healthcare, Doctor, Clinic, Care, Hospital"
+		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- SITE TITLE -->
+		<title>Focus Vascular Clinic</title>
+
+		<!-- FAVICON AND TOUCH ICONS  -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="images/apple-touch-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="images/apple-touch-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="images/apple-touch-icon-76x76.png"
+		/>
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+
+		<!-- GOOGLE FONTS -->
+		<link
+			href="../../../../../fonts.googleapis.com/cssd5a5.css?family=Roboto:300,400,500,700,900"
+			rel="stylesheet"
+		/>
+		<link
+			href="../../../../../fonts.googleapis.com/css716c.css?family=Lato:400,700,900"
+			rel="stylesheet"
+		/>
+
+		<!-- BOOTSTRAP CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- FONT ICONS -->
+		<link
+			href="../../../../../use.fontawesome.com/releases/v5.7.2/css/all.css"
+			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+			rel="stylesheet"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+			integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link href="css/flaticon.css" rel="stylesheet" />
+
+		<!-- PLUGINS STYLESHEET -->
+		<link href="css/menu.css" rel="stylesheet" />
+		<link
+			id="effect"
+			href="css/dropdown-effects/fade-down.css"
+			media="all"
+			rel="stylesheet"
+		/>
+		<link href="css/magnific-popup.css" rel="stylesheet" />
+		<link href="css/owl.carousel.min.css" rel="stylesheet" />
+		<link href="css/owl.theme.default.min.css" rel="stylesheet" />
+		<link href="css/animate.css" rel="stylesheet" />
+		<link href="css/jquery.datetimepicker.min.css" rel="stylesheet" />
+
+		<!-- TEMPLATE CSS -->
+		<link href="css/style.css" rel="stylesheet" />
+
+		<!-- RESPONSIVE CSS -->
+		<link href="css/responsive.css" rel="stylesheet" />
+
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != "dataLayer" ? "&l=" + l : "";
+				j.async = true;
+				j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, "script", "dataLayer", "GTM-N533W2H8");
+		</script>
+		<!-- End Google Tag Manager -->
+
+		<!-- Meta Pixel Code -->
+		<script>
+			!(function (f, b, e, v, n, t, s) {
+				if (f.fbq) return;
+				n = f.fbq = function () {
+					n.callMethod
+						? n.callMethod.apply(n, arguments)
+						: n.queue.push(arguments);
+				};
+				if (!f._fbq) f._fbq = n;
+				n.push = n;
+				n.loaded = !0;
+				n.version = "2.0";
+				n.queue = [];
+				t = b.createElement(e);
+				t.async = !0;
+				t.src = v;
+				s = b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t, s);
+			})(
+				window,
+				document,
+				"script",
+				"https://connect.facebook.net/en_US/fbevents.js"
+			);
+			fbq("init", "464108719680215");
+			fbq("track", "PageView");
+		</script>
+		<noscript
+			><img
+				height="1"
+				width="1"
+				style="display: none"
+				src="https://www.facebook.com/tr?id=464108719680215&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Meta Pixel Code -->
+
+		<style>
+			/* body {
+      background-color: #f8f9fa;
+    } */
+			.content-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 60vh;
+			}
+			.thank-you-card {
+				max-width: 500px;
+				padding: 30px;
+				background-color: #fff;
+				border-radius: 10px;
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+				text-align: center;
+			}
+			.thank-you-card h1 {
+				color: #000;
+			}
+			.thank-you-card p {
+				color: #6c757d;
+				font-size: 18px;
+				margin-bottom: 20px;
+			}
+			.btn-primary {
+				background-color: #daa520;
+				border-color: #daa520;
+				padding: 10px 20px;
+				font-size: 18px;
+				border-radius: 5px;
+			}
+			.btn-primary:hover {
+				background-color: #e09705;
+				border-color: #e09705;
+			}
+			.thank-you-icon {
+				font-size: 60px;
+				color: #daa520;
+				margin-bottom: 20px;
+			}
+			.background-pattern {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-image: url("https://via.placeholder.com/1920x1080");
+				opacity: 0.1;
+				z-index: -1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-N533W2H8"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+		<!-- PRELOADER SPINNER
+		============================================= -->
+		<div id="loader-wrapper">
+			<div id="loader"><div class="loader-inner"></div></div>
+		</div>
+
+		<!-- PAGE CONTENT
+		============================================= -->
+		<div id="page" class="page">
+			<!-- HEADER
+			============================================= -->
+			<header id="header-2" class="header">
+				<!-- MOBILE HEADER -->
+				<div class="wsmobileheader clearfix">
+					<a id="wsnavtoggle" class="wsanimated-arrow"><span></span></a>
+					<span class="smllogo"
+						><img
+							src="images/focus/logo.png"
+							width="180"
+							height="40"
+							alt="mobile-logo"
+					/></span>
+					<a
+						style="padding: 19px 10px"
+						href="https://wa.me/+919845901793"
+						class="callusbtn"
+						target="_blank"
+					>
+						<img
+							src="./images/focus/whatsapp.png"
+							alt="WhatsApp"
+							width="38"
+							height="38"
+					/></a>
+				</div>
+
+				<!-- HEADER WIDGETS -->
+				<div class="hero-widget clearfix">
+					<div class="container">
+						<div class="row d-flex align-items-center">
+							<!-- LOGO IMAGE -->
+							<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80 pixels) -->
+							<div class="col-md-5 col-xl-6">
+								<div class="desktoplogo">
+									<a href="#hero-4"
+										><img
+											src="images/focus/focus-logo.svg"
+											width="250"
+											height="60"
+											alt="header-logo"
+									/></a>
+								</div>
+							</div>
+
+							<!-- WIDGETS -->
+							<div class="col-md-7 col-xl-6">
+								<div class="row">
+									<!-- Working Hours Widget -->
+									<div class="col-md-6">
+										<div class="header-widget icon-xs">
+											<span class="flaticon-092-clock blue-color"></span>
+											<div class="header-widget-txt">
+												<p class="txt-400">Mon – Fri : - 6:30 AM - 8:30 PM</p>
+												<p class="txt-400">Sat : - 9:00 AM - 11:30 AM</p>
+											</div>
+										</div>
+									</div>
+
+									<!-- Location Widget -->
+									<div class="col-md-6">
+										<div class="header-widget icon-xs">
+											<span class="flaticon-021-hospital-9 blue-color"></span>
+											<div class="header-widget-txt">
+												<p class="txt-400">Rajaji Nagar & HSR Layout</p>
+												<p class="lightgrey-color">Bangalore</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END WIDGETS -->
+						</div>
+					</div>
+				</div>
+				<!-- END HEADER WIDGETS -->
+
+				<!-- NAVIGATION MENU -->
+				<!-- <div class="wsmainfull menu clearfix">
+					<div class="wsmainwp clearfix">
+						<div class="desktoplogo">
+							<a href="#hero-4"
+								><img
+									src="images/focus/focus-logo.svg"
+									width="200"
+									height="40"
+									alt="header-logo"
+							/></a>
+						</div> -->
+
+				<!-- MAIN MENU -->
+				<!-- <nav class="wsmenu clearfix">
+							<ul class="wsmenu-list">
+								<li class="nl-simple" aria-haspopup="true">
+									<a href="#">Home</a>
+								</li>
+								<li class="nl-simple" aria-haspopup="true">
+									<a href="#">Why Choose Us</a>
+								</li>
+								<li class="nl-simple" aria-haspopup="true">
+									<a href="#">Our Solutions</a>
+								</li>
+								<li class="nl-simple" aria-haspopup="true">
+									<a href="#">Our Team</a>
+								</li>
+								<li class="nl-simple" aria-haspopup="true">
+									<a href="#">Contact Us</a>
+								</li>
+
+								<li class="nl-simple header-btn" aria-haspopup="true">
+									<a class="blue-hover" href="./images/focus/brochure.pdf" target="_blank"
+										>Download Brochure</a
+									>
+								</li>
+							</ul>
+						</nav> -->
+				<!-- END MAIN MENU -->
+
+				<!-- NAVIGATION MENU BUTTON -->
+				<!-- <div class="header-button">
+							<span class="nl-simple header-btn blue-hover"
+								><a class="blue-hover" href="./images/focus/brochure.pdf" target="_blank"
+										>Download Brochure</a
+									>
+						</div> -->
+				<!-- </div> -->
+
+				<!-- END NAVIGATION MENU -->
+			</header>
+			<!-- END HEADER -->
+
+			<div class="container">
+				<div class="content-wrapper">
+					<div class="thank-you-card">
+						<i class="fas fa-check-circle thank-you-icon"></i>
+						<h1>Thank You!</h1>
+						<p>
+							Your inquiry has been received. We'll get back to you as soon as
+							possible.
+						</p>
+						<!-- You can add additional content or links here -->
+						<a href="index.html" class="btn btn-primary">Back to Home</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- FOOTER-1
+			============================================= -->
+			<footer id="footer-1" class="bg-image wide-40 footer division">
+				<div class="container">
+					<!-- FOOTER CONTENT -->
+					<div class="row">
+						<!-- FOOTER INFO -->
+						<div class="col-md-6 col-lg-4">
+							<div class="footer-info mb-40">
+								<!-- Footer Logo -->
+								<!-- For Retina Ready displays take a image with double the amount of pixels that your image will be displayed (e.g 360 x 80  pixels) -->
+								<img
+									src="images/focus/footer-logo.svg"
+									width="250"
+									height="60"
+									alt="footer-logo"
+								/>
+
+								<!-- Text -->
+								<p class="p-sm mt-20">
+									Leading Specialists for Varicose Veins Treatment (EVLT &
+									Venaseal): Bangalore
+								</p>
+
+								<!-- Social Icons -->
+								<div class="footer-socials-links mt-20">
+									<ul class="foo-socials text-center clearfix">
+										<li>
+											<a href="#" class="ico-facebook"
+												><i class="fab fa-facebook-f"></i
+											></a>
+										</li>
+										<li>
+											<a href="#" class="ico-twitter"
+												><i class="fab fa-twitter"></i
+											></a>
+										</li>
+										<li>
+											<a href="#" class="ico-instagram"
+												><i class="fab fa-instagram"></i
+											></a>
+										</li>
+										<li>
+											<a href="#" class="ico-linkedin"
+												><i class="fab fa-linkedin-in"></i
+											></a>
+										</li>
+
+										<!--
+										<li><a href="#" class="ico-behance"><i class="fab fa-behance"></i></a></li>	
+										<li><a href="#" class="ico-dribbble"><i class="fab fa-dribbble"></i></a></li>											
+										<li><a href="#" class="ico-instagram"><i class="fab fa-instagram"></i></a></li>	
+										<li><a href="#" class="ico-linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+										<li><a href="#" class="ico-pinterest"><i class="fab fa-pinterest-p"></i></a></li>									
+										<li><a href="#" class="ico-youtube"><i class="fab fa-youtube"></i></a></li>											
+										<li><a href="#" class="ico-vk"><i class="fab fa-vk"></i></a></li>
+										<li><a href="#" class="ico-yelp"><i class="fab fa-yelp"></i></a></li>
+										<li><a href="#" class="ico-yahoo"><i class="fab fa-yahoo"></i></a></li>
+									    -->
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- FOOTER Links -->
+						<div class="col-md-6 col-lg-2">
+							<div class="footer-links mb-40">
+								<!-- Title -->
+								<h5 class="h5-xs">Quick Links</h5>
+
+								<!-- Footer Links -->
+								<ul class="foo-links clearfix">
+									<li><a href="index.html">Home</a></li>
+									<li><a href="#">Treatment</a></li>
+									<li><a href="#">Our Team</a></li>
+									<li><a href="#">FAQs</a></li>
+									<li><a href="#">Contact Us</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- FOOTER CONTACTS -->
+						<div class="col-md-6 col-lg-3">
+							<div class="footer-box mb-40">
+								<!-- Title -->
+								<h5 class="h5-xs">Our Location</h5>
+
+								<!-- Address -->
+								<p>Rajaji Nagar & HSR Layout,</p>
+								<p>Bangalore</p>
+
+								<!-- Email -->
+								<p class="foo-email mt-20">
+									E:
+									<a href="mailto:drkarthikhegde@gmail.com"
+										>drkarthikhegde@gmail.com</a
+									>
+								</p>
+
+								<!-- Phone -->
+								<p class="foo-email">
+									P:
+									<a href="tel:+919845901793">+91 9845901793</a>
+								</p>
+							</div>
+						</div>
+
+						<!-- FOOTER PHONE NUMBER -->
+						<div class="col-md-6 col-lg-3">
+							<div class="footer-box mb-40">
+								<!-- Title -->
+								<h5 class="h5-xs">Emergency Cases</h5>
+
+								<!-- Footer List -->
+								<h5 class="h5-xl blue-color">
+									<a href="tel:+919845901793">+91 98459 01793</a>
+								</h5>
+
+								<!-- Text -->
+								<p class="p-sm mt-15">
+									Safety first! Our clinic is ready to handle any emergency,
+									from allergic reactions to bleeding, ensuring every patient
+									gets prompt care.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- END FOOTER CONTENT -->
+
+					<!-- FOOTER COPYRIGHT -->
+					<div class="bottom-footer">
+						<div class="row">
+							<div class="col-md-12">
+								<p class="footer-copyright">
+									&copy; 2024 <span>Focus Vascular Clinic</span>. All Rights
+									Reserved
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End container -->
+			</footer>
+			<!-- END FOOTER-1 -->
+		</div>
+		<!-- END PAGE CONTENT -->
+
+		<!-- EXTERNAL SCRIPTS
+		============================================= -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/modernizr.custom.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/jquery.appear.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/menu.js"></script>
+		<script src="js/sticky.js"></script>
+		<script src="js/jquery.scrollto.js"></script>
+		<script src="js/materialize.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/isotope.pkgd.min.js"></script>
+		<script src="js/hero-form.js"></script>
+		<script src="js/contact-form.js"></script>
+		<script src="js/comment-form.js"></script>
+		<script src="js/appointment-form.js"></script>
+		<script src="js/jquery.datetimepicker.full.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="js/wow.js"></script>
+
+		<!-- Custom Script -->
+		<script src="js/custom.js"></script>
+
+		<script>
+			new WOW().init();
+		</script>
+
+		<script src="js/changer.js"></script>
+		<script defer src="js/styleswitch.js"></script>
+	</body>
+</html>
